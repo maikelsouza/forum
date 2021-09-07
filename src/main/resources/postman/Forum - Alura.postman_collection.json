@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "c5746be3-73f4-4606-a869-6895f74c7bd9",
+		"name": "Forum - Alura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "topicos",
+			"item": [
+				{
+					"name": "Cadastro",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"\",\r\n    \"mensagem\" : \"texto da mensagem 3\",\r\n    \"nomeCurso\" : \"Spring boot\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/topicos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"topicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"titulo\": \"Atualizadomfdmfdmmdfs\",\r\n    \"mensagem\": \"Tag HTML lllll\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/topicos/398988",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"topicos",
+								"398988"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"titulo\": \"Atualizado\",\r\n    \"mensagem\": \"Tag HTML lllll\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/topicos/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"topicos",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/topicos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"topicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalhar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/topicos/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"topicos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
